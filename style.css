@@ -11,11 +11,15 @@ html {
   height: 100vh;
   font-family: "Lemon", serif;
 }
-.header_top {
+.header__top {
   font-size: 30px;
   margin-left: 30px;
   color: rgb(35, 40, 59);
   margin-bottom: 130px;
+}
+.header__bottom {
+  font-size: 10px;
+  margin-left: 15px;
 }
 
 .city {
@@ -30,8 +34,10 @@ html {
   width: 100%;
 }
 .city__photo-coat {
-  height: 60%;
-  width: 100%;
+  position: relative;
+  left: 20%;
+  height: 40%;
+  width: 50%;
 }
 .city__link {
   text-decoration: none;
@@ -42,6 +48,7 @@ html {
 }
 .city__title {
   font-family: "Lemon", serif;
+  text-align: center;
 }
 
 .container {
@@ -114,9 +121,18 @@ html {
   color: rgb(37, 52, 107);
 }
 
-@media (min-width: 400px) {
+@media (min-width: 600px) {
   .container {
     flex-direction: row;
+  }
+  .city__photo-coat {
+    height: 60%;
+    width: 100%;
+    position: relative;
+    left: 0%;
+  }
+  .header__bottom {
+    font-size: 20px;
   }
 }
 
