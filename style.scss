@@ -1,0 +1,139 @@
+html{
+  background-color: rgb(80, 116, 116);
+}
+
+.header {
+  background-image: url(./images/Ukraine-2109x1406-2.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Lemon', serif;
+  
+  &_top{
+    font-size: 30px;
+    margin-left: 30px;
+    color: rgb(35, 40, 59);
+    margin-bottom: 130px;
+  }
+}
+
+
+.city{
+  flex-basis: 30%;
+  padding: 10px;
+  background-color: rgb(37, 52, 107);
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+
+  &__photo{
+    width: 100%;
+  }
+  
+  &__photo-coat{
+    height: 60%;
+    width: 100%
+  }
+
+  &__link{
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: gray;
+    }
+  }
+
+  &__title{
+    font-family: 'Lemon', serif;
+  }
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contacts {
+  &__form {
+    grid-column: span 2;
+    margin-bottom: 48px;
+    position: relative;
+
+    &__button{
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      width: 20%;
+      height: 26px;
+      border: none;
+      border-radius: 40px;
+      background-color: rgb(37, 52, 107);
+      color: rgb(80, 116, 116);
+      font-size: 12px;
+      font-weight: 20px;
+      line-height: 27px;
+      cursor: pointer;
+    }
+
+    &__field {
+      box-sizing: border-box;
+      border: none;
+      border-radius: 16px;
+      width: 50%;
+      padding-inline: 14px;
+      background-color: rgb(37, 52, 107);
+      color: rgb(80, 116, 116);
+      font-size: 14px;
+      font-weight: 400;
+      outline: none;
+
+      &::placeholder {
+        color: rgb(80, 116, 116);;
+      }
+
+      &:hover::placeholder {
+        color: #ccc;
+      }
+
+      &:focus {
+        color: #ccc;
+      }
+
+      &--input {
+        margin-bottom: 16px;
+        height: 48px;
+      }
+
+      &--textArea {
+        height: 58px;
+        margin-bottom: 32px;
+        padding: 14px 16px;
+
+        &::placeholder {
+          font-family: Poppins, Arial, sans-serif;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.nav{
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  &:hover{
+    color:rgb(37, 52, 107) ;
+  }
+}
+
+
+@media (min-width: 400px) {
+  .container {
+    flex-direction: row;
+  }
+  
+}
