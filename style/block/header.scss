@@ -1,0 +1,25 @@
+.header {
+  background-image: url(./images/Ukraine-2109x1406-2.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: $title-font-family;
+  
+  &__top{
+    font-size: 30px;
+    margin-left: 30px;
+    color: $main-text-color;
+    margin-bottom: 130px;
+  }
+
+  &__bottom{
+    font-size: 10px;
+    margin-left: 15px;
+
+    @include onTablet{
+      font-size: 20px;
+    }
+  }
+}

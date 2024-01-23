@@ -1,0 +1,48 @@
+.city{
+  flex-basis: 30%;
+  padding: 10px;
+  background-color: $main-text-color;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+
+  &__photo{
+    width: 100%;
+  }
+  
+  &__photo-coat{
+    position: relative;
+    left: 20%;
+    height: 40%;
+    width: 50%;
+
+    @include onTablet{
+      height: 60%;
+      width: 100%;
+      position: relative;
+      left: 0%;
+    }
+  }
+
+  &__link{
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: gray;
+    }
+  }
+
+  &__title{
+    font-family: $title-font-family;
+    text-align: center;
+  }
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  @include onTablet{
+    flex-direction: row;
+  }
+}
